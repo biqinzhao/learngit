@@ -1,0 +1,12 @@
+import os, string, sys, time, re, math, fileinput, glob, shutil
+
+print os.listdir('.')
+
+for file in os.listdir('.'):
+
+	if os.path.splitext(file)[1] == ".py":
+
+		print file
+
+		shutil.copy(file, "a.py")
+print glob.glob("*.py")

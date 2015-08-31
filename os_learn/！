@@ -1,0 +1,18 @@
+import time
+import random
+#encoding UTF-8
+# encoding: UTF-8
+time.strftime("%Y-%m-%d %X", time.localtime())
+print random.randint(12, 20)  # 生成的随机数 n: 12 <= n <= 20
+print random.choice("学习Python")
+print random.choice(["JGood", "is", "a", "handsome", "boy"])
+print random.choice(("Tuple", "List", "Dict")) 
+p = ["Python", "is", "powerful", "simple", "and so on..."]
+random.shuffle(p)
+print p
+list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+slice = random.sample(list, 5)  # 从list中随机获取5个元素，作为一个片断返回
+print slice
+print list  # 原有序列并没有改变
+print random.randrange(0, 101, 2)
+
