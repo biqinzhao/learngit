@@ -1,0 +1,8 @@
+import subprocess
+
+
+returncode=subprocess.call(["ls","-l"])
+
+print "returncode=",returncode
+
+
