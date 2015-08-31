@@ -1,0 +1,14 @@
+import urllib2
+
+f=urllib2.urlopen("http://www.baidu.com")
+buf = f.read()
+ 
+request = urllib2.Request("http://www.baidu.com")
+request.add_header('User-agent', 'Internet Explorer')
+try:    
+    response = urllib2.urlopen(request)
+except urllib2.URLError, e:
+    print e.code
+     
+headers = response.info()
+data = response.read()
